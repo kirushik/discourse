@@ -55,5 +55,19 @@ describe Slug do
     Slug.for("Jeff hate's this").should == "jeff-hates-this"
   end
 
+  describe ':ru locale' do
+    before :all do
+      @default_locale = I18n.locale
+      I18n.locale = :ru
+    end
+
+    after :all do
+      I18n.locale = @default_locale
+    end
+
+    it 'should process cyrillic letters to transliteration' do
+      Slug.for("первый пост").should == "pervyy-post"
+    end
+  end
 end
 

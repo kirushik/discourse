@@ -123,6 +123,7 @@ group :development do
   gem 'librarian', '>= 0.0.25', require: false
   # https://github.com/ctran/annotate_models/pull/106
   gem 'annotate', :git => 'https://github.com/SamSaffron/annotate_models.git'
+  gem 'pry-rails'
 end
 
 # we are using a custom sprockets repo to work around: https://github.com/rails/rails/issues/8099#issuecomment-16137638
@@ -158,3 +159,5 @@ group :profile do
   # if you need to profile, uncomment out this line
   # gem 'rack-perftools_profiler', require: 'rack/perftools_profiler', platform: :mri_19
 end
+# Gem with correct I18n for russian language
+gem 'russian', '~> 0.6.0'
