@@ -43,5 +43,10 @@ describe Slug do
     Slug.for("o_o_o").should == "o-o-o"
   end
 
+  it 'processes cyrillic letters in :ru locale' do
+    I18n.locale = :ru
+    Slug.for("первый пост").should == "pervyy-post"
+    I18n.locale = :en
+  end
 end
 
