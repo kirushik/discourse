@@ -1,15 +1,15 @@
-ru:
-  title: "Discourse"
-  topics: "Topics"
+en:
+  title: "Дискурс"
+  topics: "Темы"
 
-  is_reserved: "is reserved"
-  too_many_mentions: "has too many users mentioned"
-  too_many_images: "has too many images"
-  too_many_links: "has too many links"
-  just_posted_that: "is too similar to what you recently posted"
-  has_already_been_used: "has already been used"
-  invalid_characters: "contains invalid characters"
-  is_invalid: "is invalid; try to be a little more descriptive"
+  is_reserved: "зарезервировано"
+  too_many_mentions: "упоминает слишком многих"
+  too_many_images: "содержит слишком много картинок"
+  too_many_links: "перебор с ссылками"
+  just_posted_that: "слишком похож на только что отправленый Вами"
+  has_already_been_used: "уже было использовано до Вас"
+  invalid_characters: "содержит неподходящие символы"
+  is_invalid: "неподходящее; попробуйте развернуть формулировку"
 
   education:
     until_posts:
@@ -46,39 +46,39 @@ ru:
   activerecord:
     attributes:
       category:
-        name: "Category Name"
+        name: "Название рубрики"
       post:
-        raw: "Body"
+        raw: "Текст"
     errors:
       models:
         topic:
           attributes:
             archetype:
-              cant_send_pm: "Sorry, you cannot send a private message to that user."
+              cant_send_pm: "Вы не можете послать сообщение этому пользователю. Сожалеем об этом."
 
   user_profile:
     no_info_me: "<div class='missing-profile'>the About Me field of your profile is currently blank, <a href='/users/%{username_lower}/preferences'>would you like to fill it out?</a></div>"
     no_info_other: "<div class='missing-profile'>%{name} hasn't entered anything in the About Me field of their profile yet</div>"
 
   category:
-    topic_prefix: "Category definition for %{category}"
+    topic_prefix: "Описание рубрики «%{category}»"
 
   trust_levels:
     new:
-      title: "new user"
+      title: "новичок"
     basic:
-      title: "basic user"
+      title: "начинающий пользователь"
     regular:
-      title: "regular user"
+      title: "обычный пользователь"
     experienced:
-      title: "experienced user"
+      title: "частый гость"
     advanced:
-      title: "advanced user"
+      title: "завсегдатай"
     moderator:
-      title: "moderator"
+      title: "модератор"
 
   rate_limiter:
-    too_many_requests: "You're doing that too often. Please wait %{time_left} before trying again."
+    too_many_requests: "Что-то Вы зачастили. Попробовать снова можно будет через %{time_left}."
     hours:
       one: "1 hour"
       other: "%{count} hours"
@@ -127,10 +127,10 @@ ru:
         other: "%{count}y"
 
     distance_in_words_verbose:
-      half_a_minute: "just now"
+      half_a_minute: "только что"
       less_than_x_seconds:
-        one:   "just now"
-        other: "just now"
+        one:   "только что"
+        other: "только что"
       x_seconds:
         one:   "1 second ago"
         other: "%{count} seconds ago"
@@ -163,86 +163,86 @@ ru:
         other: "almost %{count} years ago"
 
   password_reset:
-    no_token: "Sorry, your token has expired. Please try resetting your password again."
-    choose_new: "Please choose a new password"
-    update: 'update password'
-    title: 'reset password'
-    success: "You successfully changed your password and are now logged in."
-    success_unapproved: "You successfully changed your password."
+    no_token: "Увы, эта ссылка устарела. Попробуйте запросить восстановление пароля ещё раз."
+    choose_new: "Придумайте новый пароль"
+    update: 'обновить пароль'
+    title: 'сбросить пароль'
+    success: "Вы успешно поменяли пароль на новый и теперь залогинены."
+    success_unapproved: "Вы успешно поменяли свой пароль на новый."
 
   change_email:
-    confirmed: "Your email has been updated."
+    confirmed: "Ваш электропочтовый адрес обновлён."
     please_continue: "Please continue to %{link}"
-    error: "There was an error changing your email address. Perhaps the address is already in use?"
+    error: "Поменять адрес электропочты не удалось. Может быть он уже используется?"
 
   activation:
-    already_done: "Sorry, this account confirmation link is no longer valid. Perhaps your account is already active?"
-    please_continue: "Your new account is confirmed, and you are now logged in. Continue to %{link}"
-    welcome_to: "Welcome to %{site_name}!"
-    approval_required: "A moderator must manually approve your new account before you can access this forum. You'll get an email when your account is approved!"
+    already_done: "Извините, эта ссылка больше не работает. Проверьте, может быть Ваша учётная запись уже активирована?"
+    please_continue: "Ваш свежий аккаунт создан, и Вы залогинены. Continue to %{link}"
+    welcome_to: "Добро пожаловать на %{site_name}!"
+    approval_required: "Для доступа на форум требуется одобрение модератора. Когда Вы его получите, Вам в электропочту придёт уведомление."
 
   post_action_types:
     off_topic:
-      title: 'Off-Topic'
+      title: 'Оффтопик'
       description: 'This post is radically off-topic in the current conversation, and should probably be moved to a different topic.'
-      long_form: 'flagged this as off-topic'
+      long_form: 'пометил пост как оффтопик'
     spam:
-      title: 'Spam'
+      title: 'Спам'
       description: 'This post is effectively an advertisement with no disclosure. It is not useful or relevant to the current conversation, but promotional in nature.'
-      long_form: 'flagged this as spam'
+      long_form: 'пометил пост как спам'
     inappropriate:
-      title: 'Inappropriate'
+      title: 'Оскорбления'
       description: 'This post contains content that a reasonable person would consider offensive, abusive, or hate speech.'
-      long_form: 'flagged this as inappropriate'
+      long_form: 'пометил пост как оскорбительный'
     custom_flag:
-      title: 'Other'
+      title: 'Прочее'
       description: 'This post requires general moderator attention based on the <a href="/faq">FAQ</a>, <a href="/tos">TOS</a>, or for another reason not listed above.'
-      long_form: 'flagged this for moderation'
+      long_form: 'пометил пост для модераторов'
     bookmark:
-      title: 'Bookmark'
+      title: 'В избранное'
       description: 'Bookmark this post'
-      long_form: 'bookmarked this post'
+      long_form: 'отложил пост в избранное'
     like:
-      title: 'Like'
+      title: 'Лайкнуть'
       description: 'Like this post'
-      long_form: 'liked this'
+      long_form: 'лайкнул этот пост'
 
   flagging:
-    you_must_edit: '<p>Your post reached the flagging threshold. Please see your private messages.</p>'
+    you_must_edit: '<p>Слишком много жалоб на Вашу запись. Пожалуйста, проверьте личные сообщения.</p>'
     user_must_edit: '<p>Flagged content hidden.</p>'
 
   archetypes:
     regular:
-      title: "Regular Topic"
+      title: "Обычная тема"
 
   unsubscribed:
-    title: 'Unsubscribed'
-    description: "You have been unsubscribed. We won't contact you again!"
-    oops: "In case you didn't mean to do this, click below."
-    not_found: "Error Unsubscribing"
-    not_found_description: "Sorry, we couldn't unsubscribe you. It's possible the link in your email has expired."
+    title: 'Отмена подписки'
+    description: "Вы отменили подписку. Мы Вас больше не потревожим!"
+    oops: "Если Вы ошиблись или передумали — нажмите ссылку ниже."
+    not_found: "Отмена подписки не удалась"
+    not_found_description: "Попытка отменить подписку не удалась. Скорее всего, ссылка в Вашем письме уже просрочена."
 
   resubscribe:
-    action: "Re-Subscribe"
-    title: "Re-Subscribed!"
-    description: "You have been re-subscribed."
+    action: "Восстановить подписку"
+    title: "Подписка восстановлена!"
+    description: "Теперь подписка восстановлена."
 
   site_settings:
-    min_post_length: "minimum post length"
-    max_post_length: "maximum post length"
-    min_topic_title_length: "minimum topic title length"
-    max_topic_title_length: "maximum topic title length"
-    allow_duplicate_topic_titles: "whether users can create topics with the same titles"
-    unique_posts_mins: "How many minutes before a user can make a post with the same content again"
-    enforce_global_nicknames: "Enforce global nickname uniqueness. Note: Only change during initial setup."
-    discourse_org_access_key: "The access key used to access the discourse.org nickname registry"
-    educate_until_posts: "Show education until the user has made this many posts"
-    title: "title of this website"
-    secret_token: "secret token used to secure cookies"
-    restrict_access: "restrict forum access unless this password is entered"
-    access_password: "restrict_access is enabled ensure that this password is entered"
-    queue_jobs: "queue various jobs in sidekiq, if false queues are inline"
-    crawl_images: "enable retrieving of images from third party sources"
+    min_post_length: "минимальная длина записи"
+    max_post_length: "максимальная длина записи"
+    min_topic_title_length: "минимальная длина заголовка темы"
+    max_topic_title_length: "максимальная длина заголовка темы"
+    allow_duplicate_topic_titles: "могут ли пользователи создавать темы с дублируюимися заголовками"
+    unique_posts_mins: "с каким интервалом (в минутах) пользователь может постить идентичный контент"
+    enforce_global_nicknames: "Следить за глобальной уникальностью ников. Note: Only change during initial setup."
+    discourse_org_access_key: "Ключ от АПИ глобального справочника ников на discourse.org"
+    educate_until_posts: "Сколько первых постов должны показываться наставления"
+    title: "название этого сайта"
+    secret_token: "секретный ключ для шифрования cookies"
+    restrict_access: "защитить паролем доступ на форум"
+    access_password: "вход на форум будет защищён этим паролем"
+    queue_jobs: "хранить ли задачи в sidekiq. Если false, задачи будут обрабатываться движком."
+    crawl_images: "разрешить забор картнок с внешних источников"
     ninja_edit_window: "how quickly you can make an edit without it saving a new version, in seconds."
     enable_imgur: "enable imgur api for uploading, don't host files locally"
     imgur_api_key: "imgur.com api key - required for image upload"
