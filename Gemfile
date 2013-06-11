@@ -25,7 +25,7 @@ gem 'eventmachine'
 gem 'fast_xs'
 gem 'fast_xor', git: 'https://github.com/CodeMonkeySteve/fast_xor.git'
 gem 'fastimage'
-gem 'fog', require: false
+gem 'fog', git: 'https://github.com/fog/fog', require: false
 gem 'has_ip_address'
 gem 'hiredis'
 
@@ -91,7 +91,7 @@ end
 
 group :test do
   gem 'fakeweb', '~> 1.3.0', require: false
-  gem 'minitest', require: false
+  gem 'minitest', '~> 4.7.0', require: false
 end
 
 group :test, :development do
